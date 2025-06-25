@@ -1,0 +1,33 @@
+colorscheme my
+colorscheme my2
+sdgf
+dfsjg
+colorscheme my2.theme
+colorscheme /home/darkmage13/.config/cmus/my2.theme
+set continue=true
+set format_statusline= %{status} %{?show_playback_position?%{position} %{?duration?/ %{duration} }?%{?duration?%{duration} }}%{?bpm>0?at %{bpm} BPM }%{?stream?buf: %{buffer} }%{?show_current_bitrate & bitrate>=0? %{bitrate} kbps }%= %{?repeat_current?repeat current?%{?play_library?%{?playlist_mode!="all"?%{playlist_mode} from }%{?play_sorted?sorted }library?playlist}} | %{?volume>=0?%{?lvolume!=rvolume?%{lvolume}%% %{rvolume}?%{volume}}%% | }%1{continue}%1{follow}%1{repeat}%1{shuffle} 
+bind -f common v player-pause
+bind -f common b player-prev
+bind -f common b player-previous
+bind -f common n player-next
+set tree_width_percent=30
+unbind -f common d
+unbind -f common delete
+unbind -f common delete win-remove-f
+unbind
+bind -f common delete win-remove-f
+bind -f common delete 
+bind -f common delete
+bind -f common delete win-remove
+bind common delete win-remove-f
+bind
+%bind -f common delete win-remove-f
+bind -f common win-remove-f
+bind -f common c player-pause
+colorscheme my.theme
+quit
+n
+q
+coloscheme my
+add Musique/
+add

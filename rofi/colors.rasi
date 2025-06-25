@@ -1,0 +1,10 @@
+* {
+    background:     rgba(25, 0, 0, 0.95);
+	background-input: rgba(25, 0, 0, 0.5);
+    background-alt: #000000;
+    foreground:     rgba(255, 150, 0, 1);
+    selected:       rgba(150, 50, 0, 0.85);
+    active:         rgba(25, 0, 0, 1);
+    urgent:         #EF3946;
+	border:			rgba(150, 0, 0, 1);
+}

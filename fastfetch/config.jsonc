@@ -1,0 +1,62 @@
+{
+    "logo": {
+    	"source": "~/.config/fastfetch/bruh2.jpg",
+    	"type": "kitty",
+    	"height": 12,
+    	"padding": {
+    		"top": 0
+    	}
+    },
+    "display": {
+        "separator": " - "
+    },
+    "modules": [
+
+//	{
+//           "type": "custom",
+//            "format": " \u001b[31m  \u001b[33m  \u001b[32m  \u001b[36m  \u001b[34m  \u001b[35m  "
+//        },
+	"break",
+	{
+		"type": "title",
+		"key": "コンピューター"
+	},
+	"break",
+        {
+            "type": "os",
+            "key": " ",
+            "keyColor": "31"
+        },
+        {
+            "type": "kernel",
+            "key": " ",
+            "keyColor": "33"
+        },
+        {
+            "type": "shell",
+            "key": " ",
+            "keyColor": "32" 
+        },
+        {
+            "type": "terminal",
+            "key": " ",
+            "keyColor": "36" 
+        },
+        {
+            "type": "wm",
+            "key": " ",
+            "keyColor": "34" 
+        },
+	{
+		"type": "memory",
+		"key": " ",
+		"keyColor": "35"
+	},
+	{
+      		"type": "disk",
+      		"key": "󰋊 ",
+		"keyColor": "0"
+	},
+        "break"
+    ]
+}

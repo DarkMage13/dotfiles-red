@@ -1,0 +1,105 @@
+{
+  "margin-top" : 8,
+    "margin-left": 12,
+    "margin-right": 12,
+    "height" : 36,
+    "modules-left": [
+      "hyprland/workspaces",
+    ],
+    "modules-center": ["hyprland/window"],
+    "modules-right": [
+    "network",
+    "pulseaudio",
+    "battery",
+    "clock"
+    ],
+    "hyprland/window": {
+      "format": "{}",
+      "max-length": 50,
+      "rewrite": {
+        "": "みんな見ていてくれ"
+      },
+      "separate-outputs": true,
+    },
+    "hyprland/workspaces": {
+      "format": "{icon}",
+      "on-click": "activate",
+      "all-outputs": true,
+      "format-icons": {
+	"1": "一",
+	"2": "二",
+	"3": "三",
+	"4": "四",
+	"5": "五",
+	"6": "六",
+	"7": "七",
+	"8": "八",
+	"9": "九",
+	"10": "十"
+      },
+      "sort-by-number": true,
+      "persistent-workspaces": {
+        "*": 10
+      },
+    },
+    "clock": {
+      "format": " {:%H:%M}",
+      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+      "calendar": {
+                    "mode"          : "year",
+                    "mode-mon-col"  : 2,
+                    "weeks-pos"     : "right",
+                    "on-scroll"     : 1,
+                    "format": {
+                              "months":     "<span color='#ffead3'><b>{}</b></span>",
+                              "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                              "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                              "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                              "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+                              }
+                    },
+      "format-alt": " {:%d/%m/%Y}"
+    },
+    "cpu": {
+      "format": "  {usage}%",
+      "tooltip": false
+    },
+    "memory": {
+      "format": "{}%  "
+    },
+    "battery": {
+      "states": {
+        "warning": 30,
+        "critical": 15
+      },
+      "format": "{icon}{capacity}%",
+      "format-full": "{icon}{capacity}%",
+      "format-charging": " {capacity}%",
+      "format-plugged": " {capacity}%",
+      "format-alt": "{icon}{time}",
+      "format-icons": [" ", " ", " ", " ", " "]
+    },		
+    "network": {
+      "format-wifi": " {signalStrength}%",
+      "format-ethernet": "{cidr}",
+      "tooltip-format": "{ifname} via {gwaddr} ",
+      "format-linked": "{ifname} (No IP) ",
+      "format-disconnected": "⚠",
+      "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+    "pulseaudio": {
+      "format": "{icon} {volume}%",
+      "format-bluetooth": "{volume}% {icon} {format_source}",
+      "format-bluetooth-muted": " {icon} {format_source}",
+      "format-muted": " 0%",
+      "format-icons": {
+        "headphone": "",
+        "hands-free": "",
+        "headset": "",
+        "phone": "",
+        "portable": "",
+        "car": "",
+        "default": ["", "", ""]
+      },
+    },
+}
