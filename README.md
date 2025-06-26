@@ -4,4 +4,4 @@ This is still really messy and a lot could be done to automate things and change
 
 ## Preview
 
-![Just a preview]{preview.png}
+![Just a preview](preview.png)
